@@ -1,0 +1,50 @@
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+select,
+input[type="range"] {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+#imagen-producto {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#precio-producto,
+#precio-total,
+#precio-pagos {
+  font-weight: bold;
+}

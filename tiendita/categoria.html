@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO DE GENEROS</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body onload="mostrarCategorias();">
+    <div class="container-fluid text-center m-auto">
+        <h1 class="bg-danger text-white">PELICULAS</h1><hr>
+        <h2>GESTIÓN DE GENEROS</h2>
+        <a href="categoria.html" class="btn btn-success w-25">GENERO</a>
+        <a href="pelicula.html" class="btn btn-danger w-25">PELICULA</a>
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addModalCategoria">Agregar Genero</button>
+        <div class="card w-100 bg-danger text-white mt-2" id="listCategorias">
+        </div>
+<div class="modal fade" id="addModalCategoria" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">AGREGAR GENERO</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="formAdd">
+                <h2>NOMBRE DE GENERO:</h2>
+                <input type="text" name="" id="nombre" class="form-control m-1" placeholder="Nombre genero">
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-success" id="agregar">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+    <script src="bootstrap.min.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="appCategoria.js"></script>
+</body>
+</html>

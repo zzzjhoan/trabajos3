@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PELICULA</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body onload="mostrarPeliculas('0');mostrarCategorias()" class="text-center">
+    <h1 class="bg-success text-white">PELICULA CECYTO</h1><hr>
+    CATEGORIA PELICULAS
+    <select name="" id="categoria" class="form-control w-25 m-auto mb-3" onclick="mostrarPeliculas(this.value)"></select>    
+    <div class="container-fluid text-center m-auto w-50" id="listPeliculas">
+    </div>
+    <script src="bootstrap.min.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="appInicio.js"></script>
+</body>
+</html>

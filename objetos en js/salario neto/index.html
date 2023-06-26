@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap.min.css">
+  
+  <title>Salario Neto</title>
+</head>
+
+<body>
+  <div class="container text-center">
+    <h1 class="bg-danger text-white">SALARIO NETO</h1><hr>
+    <table class="w-100">
+      <tr>
+        <td class="bg-dark text-white" colspan="2">EMPLEO</td>
+      </tr>
+        <tr>
+        <td colspan="2">
+          <select name="" id="empleo" class="form-control">
+            <option value="GERENTE">GERENTE</option>
+            <option value="JEFE">JEFE</option>
+            <option value="CAJERO">CAJERO</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td class="bg-dark text-white" colspan="2">HORAS</td>
+      </tr>
+      <tr>
+        <td>
+        <input type="range" min="1" max="60" value="1" id="horas" class="form-control"></td>
+        <td id="vhoras" class="h1">1</td>
+      </tr>
+      <tr>
+        <td class="bg-dark text-white" colspan="2">ANTIGUEDAD</td></td>
+      </tr>
+      <tr>
+        <td>
+        <input type="range" min="1" max="30" value="1" id="anti" class="form-control"></td>
+        <td id="vanti" class="h1">1</td>
+      </tr>
+      <tr>
+        <td class="bg-primary text-white" colspan="2">PERCEPCIONES</td>
+      </tr>
+     
+      </table>
+     <div id="perce"></div> 
+     <table class="w-100">
+       <tr>
+         <td class="bg-primary text-white" colspan="2">DEDUCCIONES</td>
+       </tr>
+     </table>
+       <div id="dedu"></div>
+       <table>
+       <tr>
+         <td class="bg-primary text-white" colspan="2">SALARIO NETO</td>
+       </tr>
+       </table
+       <div id="neto"></div>
+     </table>
+     <br>
+     <button class="btn btn-danger w-100" id="reset">RESET</button>
+    
+  </div>
+</body>
+<script src="sweetalert2.all.min.js"></script>
+<script src="bootstrap.bootstrap.min.js"></script>
+<script src="app.js"></script>
+
+</html>
+
+</body>
+
+</html>

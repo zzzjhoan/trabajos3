@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Selección de productos</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Selección de productos</h2>
+
+    <label for="select-producto">Producto:</label>
+    <select id="select-producto">
+      <option value="tv">TV</option>
+      <option value="moto">Moto</option>
+      <option value="sala">Sala</option>
+      <option value="refri">Refri</option>
+      <option value="lavadora">Lavadora</option>
+    </select>
+
+    <div>
+      <img id="imagen-producto" src="" alt="Producto">
+    </div>
+
+    <div>
+      <label for="slider-cantidad">Cantidad:</label>
+      <input type="range" id="slider-cantidad" min="1" max="10" value="1">
+      <span id="cantidad">1</span>
+    </div>
+
+    <div>
+      <h3>Precio: <span id="precio-producto">8000</span></h3>
+    </div>
+
+    <div>
+      <h3>Precio contado: <span id="precio-total">8000</span></h3>
+    </div>
+
+    <div>
+      <label for="checkbox-pagos">Meses sin intereses:</label>
+      <input type="checkbox" id="checkbox-pagos">
+    </div>
+
+    <div>
+      <label for="select-meses">Plazos:</label>
+      <select id="select-meses">
+        <option value="3">3 meses</option>
+        <option value="6">6 meses</option>
+        <option value="12">12 meses</option>
+      </select>
+    </div>
+
+    <div>
+      <h3>Precio a meses: <span id="precio-pagos">8000</span></h3>
+    </div>
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>
